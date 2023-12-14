@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samrit Juice Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+    <body>
+        <div>
+            <h2>Everest Juice shop!</h2>
+            <div class="container">
+                <div class="product">
+                    <!-- <-! Product Listing with buttons to add cart-> -->
+                    <span>Apple</span>
+                    <span>$2.99</span>
+                    <span id="item-1-qty"></span>
+                    <!-- <-- //Button to add Apples to Cart/ -->  
+                    <button onclick="addToCart('Apple', 2.99, 1)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    
+                    <span>Lemon</span>
+                    <span>$4.99</span>
+                    <span id="item-2-qty"></span>
+                    <button onclick="addToCart('Lemon',4.99,2)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    
+                    <span>Mango</span>
+                    <span>$5.99</span>
+                    <span id="item-3-qty"></span>
+                    <button onclick="addToCart('Mango',5.99,3)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    
+                    <span>Orange</span>
+                    <span>$7.99</span>
+                    <span id="item-4-qty"></span>
+                    <button onclick="addToCart('Orange',7.99,4)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    
+                    <span>Grapes</span>
+                    <span>$8</span>
+                    <span id="item-5-qty"></span>
+                    <button onclick="addToCart('Grapes',8.5,5)">Add to Cart</button>
+                </div>
+            </div>
+            <!-- This button will help to start checkout process -->
+            <button class="checkout" onclick="checkout()">Checkout</button>
+        </div>
+
+        
+        <!-- this div will contain the receipt -->
+        <div id="receipt" class="hidden">
+        </div>
+    </body>
+</body>
+</html>
